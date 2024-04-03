@@ -1,0 +1,2 @@
+#!/bin/sh
+watchmedo auto-restart --directory=celeryapp --pattern=*.py --recursive -- celery -A django-celery worker "$@" --loglevel=info
